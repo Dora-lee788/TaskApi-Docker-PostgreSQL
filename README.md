@@ -1,39 +1,27 @@
 # TaskApi
 
-Учебный проект — простое API на .NET для работы со списком задач, запущенное в Docker-контейнере.
+## Описание проекта
 
-В проекте реализованы два endpoint:
-- `/health` — проверка работы API
-- `/tasks` — получение списка задач
+TaskApi — API-сервис для работы с задачами.
 
-## 1. API
+Проект реализован на .NET 9 с использованием PostgreSQL 16 и Docker Compose.
 
-![API](screenshots/01-program.png)
+Реализованы CRUD-операции с задачами: создание, получение, изменение и удаление.
 
-## 2. Dockerfile
+## Проверка API
 
-![Dockerfile](screenshots/02-dockerfile.png)
+### Проверка работоспособности API
 
-## 3. Сборка Docker-образа
+![Проверка API](screenshots/health.png)
 
-![Docker build](screenshots/03-docker-build.png)
+### CRUD-проверка
 
-## 4. Docker-образ
+![CRUD-проверка](screenshots/crud.png)
 
-![Docker images](screenshots/04-docker-images.png)
+### Проверка Docker Compose
 
-## 5. Запуск контейнера и проверка
+![Docker Compose](screenshots/docker-compose-ps.png)
 
-![Docker run and ps](screenshots/05-docker-run-and-ps.png)
+### Проверка сохранения данных после перезапуска
 
-## 6. Логи контейнера
-
-![Docker logs](screenshots/06-docker-logs.png)
-
-## 7. Проверка `/health`
-
-![Health](screenshots/07-health.png)
-
-## 8. Проверка `/tasks`
-
-![Tasks](screenshots/08-tasks.png)
+![Сохранение данных после перезапуска](screenshots/data-persistence.png)
